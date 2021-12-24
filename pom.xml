@@ -13,6 +13,31 @@
         Curated dependencies for the Pavlidis Lab's Java applications.
     </description>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.amashchenko.maven.plugin</groupId>
+                    <artifactId>gitflow-maven-plugin</artifactId>
+                    <version>1.17.0</version>
+                    <configuration>
+                        <pushRemote>false</pushRemote>
+                        <verbose>true</verbose>
+                        <gitFlowConfig>
+                            <productionBranch>master</productionBranch>
+                            <developmentBranch>development</developmentBranch>
+                            <releaseBranchPrefix>release-</releaseBranchPrefix>
+                            <origin>origin</origin>
+                            <featureBranchPrefix>feature-</featureBranchPrefix>
+                            <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+                            <supportBranchPrefix>support-</supportBranchPrefix>
+                        </gitFlowConfig>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -25,47 +50,107 @@
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
-                <version>3.6.10.Final</version>
+                <version>${hibernate.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-ehcache</artifactId>
-                <version>3.6.10.Final</version>
+                <version>${hibernate.version}</version>
                 <scope>runtime</scope>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.27</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-dbcp2</artifactId>
+                <version>2.9.0</version>
+                <scope>runtime</scope>
             </dependency>
 
-            <!-- Web -->
+            <!-- Caching (version is dictated by hibernate-ehcache) -->
+            <dependency>
+                <groupId>net.sf.ehcache</groupId>
+                <artifactId>ehcache-core</artifactId>
+                <version>2.4.3</version>
+            </dependency>
+
+            <!-- Web (tuned for Tomcat 8.5) -->
             <dependency>
                 <groupId>javax.servlet</groupId>
-                <artifactId>servlet-api</artifactId>
+                <artifactId>javax.servlet-api</artifactId>
                 <version>3.1.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>javax.servlet.jsp-api</artifactId>
+                <version>2.3.3</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- Tomcat -->
+            <!-- if you application specifically targets Tomcat for deployment, you can use the following dependencies instead of the generic ones above -->
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-servlet-api</artifactId>
+                <version>${tomcat.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-jsp-api</artifactId>
+                <version>${tomcat.version}</version>
+                <scope>provided</scope>
             </dependency>
 
             <!-- Logging -->
             <dependency>
-                <groupId>log4j</groupId>
+                <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
-                <version>2.17.0</version>
+                <version>${log4j.version}</version>
+            </dependency>
+            <!-- if you application is not a final product (i.e. a reusable library), you should rely on log4j-api instead -->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
             </dependency>
             <dependency>
-                <groupId>log4j</groupId>
+                <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-1.2-api</artifactId>
-                <version>2.17.0</version>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-web</artifactId>
+                <version>${log4j.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j-impl</artifactId>
+                <version>${log4j.version}</version>
+                <scope>runtime</scope>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>1.7.32<version>
+                <version>${slf4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>jcl-over-slf4j</artifactId>
-                <version>1.7.32</version>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <!-- as an alternative to SLF4J, you can also use Apache Commons Log -->
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.2</version>
             </dependency>
 
             <!-- Testing -->
@@ -104,10 +189,22 @@
         </dependencies>
     </dependencyManagement>
 
+    <repositories>
+        <repository>
+            <id>pavlab</id>
+            <name>PavLab</name>
+            <url>https://maven2.pavlab.msl.ubc.ca/</url>
+        </repository>
+    </repositories>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <log4j.version>2.17.0</log4j.version>
+        <slf4j.version>1.7.32</slf4j.version>
+        <hibernate.version>3.6.10.Final</hibernate.version>
+        <tomcat.version>8.5.72</tomcat.version>
     </properties>
 
 </project>
