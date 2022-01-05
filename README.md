@@ -14,6 +14,7 @@ Here's the core dependencies that are managed by this POM:
  - Lombok
  - Tomcat 8.5 with corresponding vendor-agnostic dependencies (JSP, Servlet 3.1 API)
  - Ehcache 2.4.3
+ - [Git-Flow Maven Plugin](https://github.com/aleksandr-m/gitflow-maven-plugin)
 
 ## Setup
 
