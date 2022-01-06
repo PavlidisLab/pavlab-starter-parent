@@ -10,6 +10,7 @@ Here's the core dependencies that are managed by this POM:
  - Hibernate 3.6.10
  - MySQL
  - SLF4J or Apache Commons Logging APIs with Log4j as backend
+ - Log4j 1.2 compatibility API
  - JUnit 4, Mockito and AssertJ for testing
  - Lombok
  - Tomcat 8.5 with corresponding vendor-agnostic dependencies (JSP, Servlet 3.1 API)
@@ -42,3 +43,19 @@ Here's the core dependencies that are managed by this POM:
     </repositories>
 </project>
 ```
+
+## Quick note if you want to use Log4j 1.2 compatibility API
+
+There might be some good reasons for still using Log4j 1.2 compatibility mode
+with Log4j 2.
+
+To honor any existing `log4j.properties` configuration, you need to set
+`-Dlog4j.compatibility=true` somewhere in your application deployment and test
+JVM flags.
+
+For Tomcat 8.5, add it to `$CATALINA_OPTS` under `bin/setenv.sh`.
+
+For a CLI application using Maven Appassembler, add it to
+`<extraJvmArguments/>` configuration property.
+
+For tests with Maven Surefire, add it to `<argLine/>` configuration property.
