@@ -93,7 +93,7 @@
             </dependency>
 
             <!-- Tomcat -->
-            <!-- if you application specifically targets Tomcat for deployment, you can use the following dependencies instead of the generic ones above -->
+            <!-- if your application specifically targets Tomcat for deployment, you can use the following dependencies instead of the generic ones above -->
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-servlet-api</artifactId>
@@ -113,7 +113,7 @@
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j.version}</version>
             </dependency>
-            <!-- if you application is not a final product (i.e. a reusable library), you should rely on log4j-api instead -->
+            <!-- if your application is not a final product (i.e. a reusable library), you should rely on log4j-api instead -->
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
