@@ -28,7 +28,7 @@ Here's the core dependencies that are managed by this POM:
     <parent>
         <groupId>ubc.pavlab</groupId>
         <artifactId>pavlab-starter-parent</artifactId>
-        <version>1.1</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
 
     <!-- add your groupId, artifactId, etc. -->
