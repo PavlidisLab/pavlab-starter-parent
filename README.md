@@ -6,6 +6,7 @@ Curated dependencies for the Pavlidis Lab's Java applications
 
 Here's the core dependencies that are managed by this POM:
 
+ - Maven 3.0.5 or newer
  - [baseCode](https://github.com/pavlidisLab/baseCode)
  - Hibernate 3.6.10
  - MySQL
@@ -33,7 +34,17 @@ Here's the core dependencies that are managed by this POM:
 
     <!-- add your groupId, artifactId, etc. -->
 
-    <!-- our POMs are not yet part of Maven Central, so you will need the following entry -->
+    <!-- Enforce minimal Maven version (optional) -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Our POMs are not yet part of Maven Central, so you will need the following entry -->
     <repositories>
         <repository>
             <id>pavlab</id>
