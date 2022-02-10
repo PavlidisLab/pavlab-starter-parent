@@ -13,6 +13,38 @@
         Curated dependencies for the Pavlidis Lab's Java applications.
     </description>
 
+    <url>https://github.com/PavlidisLab/pavlab-starter-parent</url>
+
+    <organization>
+        <name>Pavlidis Lab</name>
+        <url>https://pavlab.msl.ubc.ca/</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>poirigui</id>
+            <name>Guillaume Poirier-Morency</name>
+            <email>poirigui@msl.ubc.ca</email>
+            <organization>The University of British Columbia</organization>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/PavlidisLab/pavlab-starter-parent.git</connection>
+        <url>https://github.com/PavlidisLab/pavlab-starter-parent</url>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/PavlidisLab/pavlab-starter-parent/issues</url>
+    </issueManagement>
+
     <build>
         <pluginManagement>
             <plugins>
