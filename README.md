@@ -6,6 +6,7 @@ Curated dependencies for the Pavlidis Lab's Java applications
 
 Here's the core dependencies that are managed by this POM:
 
+ - Java 8+
  - Maven 3.0.5 or newer
  - [baseCode](https://github.com/pavlidisLab/baseCode)
  - Hibernate 3.6.10
