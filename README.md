@@ -62,7 +62,7 @@ There might be some good reasons for still using Log4j 1.2 compatibility mode
 with Log4j 2.
 
 To honor any existing `log4j.properties` configuration, you need to set
-`-Dlog4j.compatibility=true` somewhere in your application deployment and test
+`-Dlog4j1.compatibility=true` somewhere in your application deployment and test
 JVM flags.
 
 For Tomcat 8.5, add it to `$CATALINA_OPTS` under `bin/setenv.sh`.
