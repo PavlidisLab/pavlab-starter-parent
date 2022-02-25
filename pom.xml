@@ -123,6 +123,14 @@
                 <scope>runtime</scope>
             </dependency>
 
+            <!-- Bytecode manipulation (required by Hibernate as it marks its as optional) -->
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>3.28.0-GA</version>
+                <scope>runtime</scope>
+            </dependency>
+
             <!-- Caching (version is dictated by hibernate-ehcache) -->
             <dependency>
                 <groupId>net.sf.ehcache</groupId>
