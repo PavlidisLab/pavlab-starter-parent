@@ -111,6 +111,11 @@
                 <scope>runtime</scope>
             </dependency>
             <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.2-api</artifactId>
+                <version>1.0.1.Final</version>
+            </dependency>
+            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
@@ -258,12 +263,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <log4j.version>2.17.1</log4j.version>
+        <log4j.version>2.17.2</log4j.version>
         <slf4j.version>1.7.32</slf4j.version>
         <hibernate.version>5.6.5.Final</hibernate.version>
         <mysql.version>8.0.28</mysql.version>
         <tomcat.version>9.0.58</tomcat.version>
-        <mockito.version>4.3.1</mockito.version>
+        <mockito.version>4.4.0</mockito.version>
     </properties>
 
 </project>

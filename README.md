@@ -6,6 +6,7 @@ Curated dependencies for the Pavlidis Lab's Java applications
 
 Here's the core dependencies that are managed by this POM:
 
+ - Java 8+
  - Maven 3.0.5 or newer
  - [baseCode](https://github.com/pavlidisLab/baseCode)
  - Hibernate 3.6.10
@@ -29,7 +30,7 @@ Here's the core dependencies that are managed by this POM:
     <parent>
         <groupId>ubc.pavlab</groupId>
         <artifactId>pavlab-starter-parent</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>2.0-SNAPSHOT</version>
     </parent>
 
     <!-- add your groupId, artifactId, etc. -->
@@ -61,7 +62,7 @@ There might be some good reasons for still using Log4j 1.2 compatibility mode
 with Log4j 2.
 
 To honor any existing `log4j.properties` configuration, you need to set
-`-Dlog4j.compatibility=true` somewhere in your application deployment and test
+`-Dlog4j1.compatibility=true` somewhere in your application deployment and test
 JVM flags.
 
 For Tomcat 8.5, add it to `$CATALINA_OPTS` under `bin/setenv.sh`.
