@@ -56,6 +56,8 @@ Here's the core dependencies that are managed by this POM:
 </project>
 ```
 
+You can lookup [pavlab-starter-parent-test/pom.xml](pavlab-starter-parent-test/pom.xml) for a complete example.
+
 ## Quick note if you want to use Log4j 1.2 compatibility API
 
 There might be some good reasons for still using Log4j 1.2 compatibility mode
