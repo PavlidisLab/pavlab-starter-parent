@@ -46,6 +46,13 @@
     </issueManagement>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh-external</artifactId>
+                <version>3.5.2</version>
+            </extension>
+        </extensions>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -261,6 +268,27 @@
             <url>https://maven2.pavlab.msl.ubc.ca/</url>
         </repository>
     </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>pavlab</id>
+            <name>PavLab</name>
+            <url>scpexe://frink.msl.ubc.ca/space/maven2</url>
+        </repository>
+    </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>local-deploy</id>
+            <distributionManagement>
+                <repository>
+                    <id>pavlab</id>
+                    <name>PavLab</name>
+                    <url>file:///space/maven2</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

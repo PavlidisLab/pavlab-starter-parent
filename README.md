@@ -56,6 +56,27 @@ Here's the core dependencies that are managed by this POM:
 </project>
 ```
 
+For the SSH-based deployment, you will need to know the server configuration in
+your `~/.m2/settings.xml`:
+
+```xml
+<settings>
+    <servers>
+        <server>
+            <id>pavlab</id>
+            <username>{username}</username>
+            <privateKey>/path/to/your/home/.ssh/id_rsa</privateKey>
+            <!-- ensure that artifacts are group-writable -->
+            <filePermissions>664</filePermissions>
+            <directoryPermissions>775</directoryPermissions>
+        </server>
+    </servers>
+</settings>
+```
+
+If you are building from one of our servers, you can avoid using SSH altogether
+with the `local-deploy` Maven profile (activated via `-Plocal-deploy`).
+
 ## Quick note if you want to use Log4j 1.2 compatibility API
 
 There might be some good reasons for still using Log4j 1.2 compatibility mode
