@@ -119,8 +119,8 @@
             </dependency>
             <dependency>
                 <groupId>org.hibernate.javax.persistence</groupId>
-                <artifactId>hibernate-jpa-2.0-api</artifactId>
-                <version>1.0.1.Final</version>
+                <artifactId>hibernate-jpa-2.1-api</artifactId>
+                <version>1.0.2.Final</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
@@ -132,14 +132,6 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-dbcp2</artifactId>
                 <version>2.9.0</version>
-                <scope>runtime</scope>
-            </dependency>
-
-            <!-- Bytecode manipulation (required by Hibernate as it marks its as optional) -->
-            <dependency>
-                <groupId>org.javassist</groupId>
-                <artifactId>javassist</artifactId>
-                <version>3.28.0-GA</version>
                 <scope>runtime</scope>
             </dependency>
 
@@ -301,7 +293,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <log4j.version>2.17.2</log4j.version>
         <slf4j.version>1.7.32</slf4j.version>
-        <hibernate.version>3.6.10.Final</hibernate.version>
+        <hibernate.version>4.2.21.Final</hibernate.version>
         <mysql.version>8.0.28</mysql.version>
         <tomcat.version>8.5.73</tomcat.version>
         <mockito.version>4.4.0</mockito.version>
