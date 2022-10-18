@@ -130,6 +130,8 @@
                 <scope>runtime</scope>
             </dependency>
 
+            <!-- Bytecode manipulation -->
+            <!-- This is mainly for Hibernate, buts its version is quite outdated now and does not support Java 9+ -->
             <dependency>
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
