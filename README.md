@@ -92,3 +92,12 @@ For a CLI application using Maven Appassembler, add it to
 `<extraJvmArguments/>` configuration property.
 
 For tests with Maven Surefire, add it to `<argLine/>` configuration property.
+
+## Releasing
+
+When ready to perform a release, activate the `release` profile (with `-Prelease`),
+this will include source and javadocs JAR packaging.
+
+```ssh
+mvn package -Prelease
+```
