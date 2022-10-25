@@ -9,14 +9,14 @@ Here's the core dependencies that are managed by this POM:
  - Java 8+
  - Maven 3.0.5 or newer
  - [baseCode](https://github.com/pavlidisLab/baseCode)
- - Hibernate 3.6.10
+ - Hibernate 3.6
  - MySQL
  - SLF4J or Apache Commons Logging APIs with Log4j as backend
- - Log4j 1.2 compatibility API
+ - Log4j 2 with 1.2 compatibility API
  - JUnit 4, Mockito and AssertJ for testing
  - Lombok
  - Tomcat 8.5 with corresponding vendor-agnostic dependencies (JSP, Servlet 3.1 API)
- - Ehcache 2.4.3
+ - Ehcache 2.4
  - [Git-Flow Maven Plugin](https://github.com/aleksandr-m/gitflow-maven-plugin)
 
 ## Setup
@@ -30,7 +30,7 @@ Here's the core dependencies that are managed by this POM:
     <parent>
         <groupId>ubc.pavlab</groupId>
         <artifactId>pavlab-starter-parent</artifactId>
-        <version>1.1.4</version>
+        <version>1.1.8</version>
     </parent>
 
     <!-- add your groupId, artifactId, etc. -->
