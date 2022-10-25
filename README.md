@@ -30,7 +30,7 @@ Here's the core dependencies that are managed by this POM:
     <parent>
         <groupId>ubc.pavlab</groupId>
         <artifactId>pavlab-starter-parent</artifactId>
-        <version>2.0-SNAPSHOT</version>
+        <version>2.0.0-SNAPSHOT</version>
     </parent>
 
     <!-- add your groupId, artifactId, etc. -->
@@ -94,3 +94,12 @@ For a CLI application using Maven Appassembler, add it to
 `<extraJvmArguments/>` configuration property.
 
 For tests with Maven Surefire, add it to `<argLine/>` configuration property.
+
+## Releasing
+
+When ready to perform a release, activate the `release` profile (with `-Prelease`),
+this will include source and javadocs JAR packaging.
+
+```ssh
+mvn package -Prelease
+```
