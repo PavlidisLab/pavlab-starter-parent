@@ -98,6 +98,20 @@ For tests with Maven Surefire, add it to `<argLine/>` configuration property.
 When ready to perform a release, activate the `release` profile (with `-Prelease`),
 this will include source and javadocs JAR packaging.
 
-```ssh
+```bash
 mvn package -Prelease
+```
+
+## Deploying
+
+To deploy, use the `deploy` lifecycle.
+
+```bash
+mvn deploy -Prelease
+```
+
+To deploy a Maven site, use the `deploy-site` lifecycle.
+
+```bash
+mvn deploy-site
 ```
