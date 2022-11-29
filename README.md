@@ -79,6 +79,29 @@ your `~/.m2/settings.xml`:
 If you are building from one of our servers, you can avoid using SSH altogether
 with the `local-deploy` Maven profile (activated via `-Plocal-deploy`).
 
+## Hibernate
+
+To include Hibernate, ensure that you also include `javassist` and `dom4j`
+artifacts as we define up-to-date dependencies to support Java 9+ and address
+security vulnerabilities.
+
+```xml
+
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.javassist</groupId>
+    <artifactId>javassist</artifactId>
+</dependency>
+```
+
+
 ## Quick note if you want to use Log4j 1.2 compatibility API
 
 There might be some good reasons for still using Log4j 1.2 compatibility mode
@@ -100,6 +123,20 @@ For tests with Maven Surefire, add it to `<argLine/>` configuration property.
 When ready to perform a release, activate the `release` profile (with `-Prelease`),
 this will include source and javadocs JAR packaging.
 
-```ssh
+```bash
 mvn package -Prelease
+```
+
+## Deploying
+
+To deploy, use the `deploy` lifecycle.
+
+```bash
+mvn deploy -Prelease
+```
+
+To deploy a Maven site, use the `deploy-site` lifecycle.
+
+```bash
+mvn deploy-site
 ```
