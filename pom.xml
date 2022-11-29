@@ -189,7 +189,7 @@
                 <version>2.10.9.2</version>
             </dependency>
 
-            <!-- Web (tuned for Tomcat 8.5) -->
+            <!-- Web (tuned for Tomcat 9) -->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
