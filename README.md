@@ -15,7 +15,7 @@ Here's the core dependencies that are managed by this POM:
  - Log4j 2 with 1.2 compatibility API
  - JUnit 4, Mockito and AssertJ for testing
  - Lombok
- - Tomcat 8.5 with corresponding vendor-agnostic dependencies (JSP, Servlet 3.1 API)
+ - Tomcat 9 with corresponding vendor-agnostic dependencies (JSP, Servlet 4.0 API)
  - Ehcache 2.10
  - [Git-Flow Maven Plugin](https://github.com/aleksandr-m/gitflow-maven-plugin)
 
