@@ -406,7 +406,7 @@
         <hibernate.version>4.2.21.Final</hibernate.version>
         <mysql.version>8.0.30</mysql.version>
         <tomcat.version>8.5.83</tomcat.version>
-        <mockito.version>4.8.1</mockito.version>
+        <mockito.version>4.11.0</mockito.version>
     </properties>
 
 </project>
