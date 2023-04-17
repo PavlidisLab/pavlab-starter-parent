@@ -412,6 +412,14 @@
                 </site>
             </distributionManagement>
         </profile>
+        <profile>
+            <activation>
+                <jdk>(9,</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.release>8</maven.compiler.release>
+            </properties>
+        </profile>
     </profiles>
 
     <properties>
