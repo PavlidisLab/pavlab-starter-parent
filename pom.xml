@@ -152,7 +152,7 @@
             <dependency>
                 <groupId>baseCode</groupId>
                 <artifactId>baseCode</artifactId>
-                <version>1.1.16</version>
+                <version>1.1.17</version>
             </dependency>
 
             <!-- Database -->
@@ -319,7 +319,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.26</version>
+                <version>1.18.28</version>
                 <scope>compile</scope>
             </dependency>
         </dependencies>
@@ -412,8 +412,8 @@
         <log4j.version>2.20.0</log4j.version>
         <slf4j.version>1.7.36</slf4j.version>
         <hibernate.version>4.2.21.Final</hibernate.version>
-        <mysql.version>8.0.32</mysql.version>
-        <tomcat.version>8.5.87</tomcat.version>
+        <mysql.version>8.0.33</mysql.version>
+        <tomcat.version>8.5.89</tomcat.version>
         <mockito.version>4.11.0</mockito.version>
     </properties>
 
