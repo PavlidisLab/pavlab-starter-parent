@@ -339,11 +339,6 @@
             <name>PavLab</name>
             <url>scpexe://frink.msl.ubc.ca/space/maven2</url>
         </repository>
-        <site>
-            <id>pavlab</id>
-            <name>PavLab</name>
-            <url>scpexe://frink.msl.ubc.ca/space/web/maven-sites</url>
-        </site>
     </distributionManagement>
 
     <profiles>
@@ -388,11 +383,6 @@
                     <name>PavLab</name>
                     <url>file:///space/maven2</url>
                 </repository>
-                <site>
-                    <id>pavlab</id>
-                    <name>PavLab</name>
-                    <url>file:///space/web/maven-sites</url>
-                </site>
             </distributionManagement>
         </profile>
         <profile>

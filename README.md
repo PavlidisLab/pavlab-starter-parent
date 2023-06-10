@@ -53,6 +53,26 @@ Here's the core dependencies that are managed by this POM:
             <url>https://maven2.pavlab.msl.ubc.ca/</url>
         </repository>
     </repositories>
+
+    <!-- Unfortunately, it's not possible to define those in a parent POM -->
+    <distributionManagement>
+        <site>
+            <id>pavlab</id>
+            <url>scpexe://frink.msl.ubc.ca/space/web/maven-sites/${project.groupId}/${project.artifactId}-${project.version}</url>
+        </site>
+    </distributionManagement>
+    <profiles>
+        <profile>
+            <!-- For deployment where host is local (and ssh isn't available for builder, e.g. CI) -->
+            <id>local-deploy</id>
+            <distributionManagement>
+                <site>
+                    <id>pavlab</id>
+                    <url>file:///space/web/maven-sites/${project.groupId}/${project.artifactId}-${project.version}</url>
+                </site>
+            </distributionManagement>
+        </profile>
+    </profiles>
 </project>
 ```
 
