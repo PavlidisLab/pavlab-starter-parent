@@ -83,13 +83,15 @@
                         <pushRemote>false</pushRemote>
                         <verbose>true</verbose>
                         <gitFlowConfig>
+                            <origin>origin</origin>
                             <productionBranch>master</productionBranch>
                             <developmentBranch>development</developmentBranch>
                             <releaseBranchPrefix>release-</releaseBranchPrefix>
-                            <origin>origin</origin>
                             <featureBranchPrefix>feature-</featureBranchPrefix>
                             <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
                             <supportBranchPrefix>support-</supportBranchPrefix>
+                            <useSnapshotInHotfix>true</useSnapshotInHotfix>
+                            <useSnapshotInRelease>true</useSnapshotInRelease>
                         </gitFlowConfig>
                     </configuration>
                 </plugin>
