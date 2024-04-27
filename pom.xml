@@ -393,6 +393,7 @@
             </distributionManagement>
         </profile>
         <profile>
+            <id>java9</id>
             <activation>
                 <jdk>(9,</jdk>
             </activation>
