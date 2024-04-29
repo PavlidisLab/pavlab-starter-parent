@@ -78,7 +78,7 @@
                 <plugin>
                     <groupId>com.amashchenko.maven.plugin</groupId>
                     <artifactId>gitflow-maven-plugin</artifactId>
-                    <version>1.17.0</version>
+                    <version>1.21.0</version>
                     <configuration>
                         <pushRemote>false</pushRemote>
                         <verbose>true</verbose>
@@ -98,7 +98,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>3.1.2</version>
+                    <version>3.2.2</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -411,7 +411,7 @@
         <slf4j.version>1.7.36</slf4j.version>
         <hibernate.version>4.2.21.Final</hibernate.version>
         <mysql.version>8.0.33</mysql.version>
-        <tomcat.version>8.5.98</tomcat.version>
+        <tomcat.version>8.5.100</tomcat.version>
         <mockito.version>4.11.0</mockito.version>
     </properties>
 
