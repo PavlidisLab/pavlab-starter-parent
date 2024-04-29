@@ -1,5 +1,8 @@
 # pavlab-starter-parent
 
+[![master](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml)
+[![stable](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=stable-1.2)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml)
+
 Curated dependencies for the Pavlidis Lab's Java applications
 
 ## Core dependencies
