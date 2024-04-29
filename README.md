@@ -1,9 +1,11 @@
 # pavlab-starter-parent
 
-[![master](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml)
-[![stable](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=stable-1.2)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml)
-
 Curated dependencies for the Pavlidis Lab's Java applications
+
+| Branch | Status |
+| ------ | ------ |
+| [master 1.3](https://github.com/PavlidisLab/pavlab-starter-parent/tree/master) | [![master](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) |
+| [stable 1.2](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.2) | [![stable](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=stable-1.2)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) |
 
 ## Core dependencies
 
