@@ -2,10 +2,13 @@
 
 Curated dependencies for the Pavlidis Lab's Java applications
 
-| Branch | Status |
-| ------ | ------ |
-| [master 1.3](https://github.com/PavlidisLab/pavlab-starter-parent/tree/master) | [![master](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) |
-| [stable 1.2](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.2) | [![stable](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=stable-1.2)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) |
+| Branch | Status | Support | Features |
+| ------ | -- | ------ | -------- |
+| [development 2.0](https://github.com/PavlidisLab/pavlab-starter-parent/tree/development) |
+| [master 1.3](https://github.com/PavlidisLab/pavlab-starter-parent/tree/master) | [![master](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) | in development | Hibernate 5, Tomcat 9 |
+| [stable 1.2](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.2) | [![stable](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=stable-1.2)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) | EOL | Hibernate 4.2, Tomcat 8.5 |
+| [stable 1.1](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.1) | | EOL | Hibernate 3.6, Tomcat 8.5 |
+| [stable 1.0](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.0) | | EOL | |
 
 ## Core dependencies
 
