@@ -4,9 +4,9 @@ Curated dependencies for the Pavlidis Lab's Java applications
 
 | Branch | Status | Support | Features |
 | ------ | -- | ------ | -------- |
-| [2.0](https://github.com/PavlidisLab/pavlab-starter-parent/tree/development) | | in development | Hibernate 5.6, Tomcat 9 |
-| [1.3](https://github.com/PavlidisLab/pavlab-starter-parent/tree/master) | [![master](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) | in development | Hibernate 4.3, Tomcat 9 |
-| [1.2](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.2) | [![stable](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=stable-1.2)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) | current | Hibernate 4.2, Tomcat 8.5 |
+| [2.0](https://github.com/PavlidisLab/pavlab-starter-parent/tree/development) | [![CI](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=development)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) | in development | Hibernate 5.6, Tomcat 9 |
+| [1.3](https://github.com/PavlidisLab/pavlab-starter-parent/tree/master) | [![CI](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) | in development | Hibernate 4.3, Tomcat 9 |
+| [1.2](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.2) | [![CI](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml/badge.svg?branch=stable-1.2)](https://github.com/PavlidisLab/pavlab-starter-parent/actions/workflows/ci.yaml) | current | Hibernate 4.2, Tomcat 8.5 |
 | [1.1](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.1) | | EOL | Hibernate 3.6, Tomcat 8.5 |
 | [1.0](https://github.com/PavlidisLab/pavlab-starter-parent/tree/stable-1.0) | | EOL | |
 
