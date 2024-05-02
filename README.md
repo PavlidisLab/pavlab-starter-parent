@@ -158,3 +158,10 @@ To deploy a Maven site, use the `deploy-site` lifecycle.
 ```bash
 mvn deploy-site
 ```
+
+## Updating dependencies
+
+Due to the Maven 3.0.5 baseline requirement, it's not possible to use advanced
+filtering features from the versions-maven-plugin that makes l
+
+Use the `depcheck` profile to enable.
