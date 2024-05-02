@@ -15,7 +15,7 @@ Curated dependencies for the Pavlidis Lab's Java applications
 Here's the core dependencies that are managed by this POM:
 
  - Java 8+
- - Maven 3.0.5 or newer
+ - Maven 3.6.3 or newer
  - Hibernate 4.3
  - MySQL
  - SLF4J or Apache Commons Logging APIs with Log4j 2 as backend
