@@ -138,6 +138,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
+                    <!-- 3.11.0 is broken -->
                     <version>3.9.1</version>
                 </plugin>
                 <plugin>
@@ -164,7 +165,7 @@
             <dependency>
                 <groupId>baseCode</groupId>
                 <artifactId>baseCode</artifactId>
-                <version>1.1.21</version>
+                <version>1.1.22</version>
             </dependency>
 
             <!-- Database -->
@@ -298,7 +299,7 @@
             <dependency>
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
-                <version>1.3.1</version>
+                <version>1.3.2</version>
             </dependency>
 
             <!-- Testing -->
@@ -323,7 +324,7 @@
             <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
-                <version>3.25.3</version>
+                <version>3.26.0</version>
                 <scope>test</scope>
             </dependency>
 
