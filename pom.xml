@@ -165,7 +165,7 @@
             <dependency>
                 <groupId>baseCode</groupId>
                 <artifactId>baseCode</artifactId>
-                <version>1.1.22</version>
+                <version>1.1.23</version>
             </dependency>
 
             <!-- Database -->
