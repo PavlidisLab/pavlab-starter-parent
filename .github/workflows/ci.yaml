@@ -9,8 +9,8 @@ jobs:
               with:
                   distribution: temurin
                   java-version: '8'
-            - name: Install Maven 3.6.3
-              run: mvn wrapper:wrapper -Dmaven=3.6.3
+            - name: Install Maven 3.0.5
+              run: mvn wrapper:wrapper -Dmaven=3.0.5
             - name: Install with the release profile
               run: ./mvnw -f test/pom.xml install -Prelease
             - name: Build Maven site
