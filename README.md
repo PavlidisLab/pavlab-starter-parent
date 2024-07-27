@@ -14,7 +14,7 @@ Curated dependencies for the Pavlidis Lab's Java applications
 
 Here's the core dependencies that are managed by this POM:
 
- - Java 8+
+ - Java 11+
  - Maven 3.6.3 or newer
  - Hibernate 4.3
  - MySQL
