@@ -136,7 +136,7 @@ To honor any existing `log4j.properties` configuration, you need to set
 `-Dlog4j1.compatibility=true` somewhere in your application deployment and test
 JVM flags.
 
-For Tomcat 8.5, add it to `$CATALINA_OPTS` under `bin/setenv.sh` and drop the 
+For Tomcat, add it to `$CATALINA_OPTS` under `bin/setenv.sh` and drop the
 configuration file under `lib/`.
 
 ```sh
