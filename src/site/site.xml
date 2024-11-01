@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.8.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.1 http://maven.apache.org/xsd/decoration-1.8.1.xsd">
+    <bannerRight>
+        <name>UBC</name>
+        <src>/images/ubc-logo-2018-crest-blue-rgb72.jpg</src>
+        <href>https://www.ubc.ca/</href>
+    </bannerRight>
+    <body>
+        <menu name="Overview" inherit="top">
+            <item name="Pavlidis Lab Website" href="https://pavlab.msl.ubc.ca/"/>
+        </menu>
+        <menu ref="parent" inherit="top"/>
+        <menu ref="modules" inherit="top"/>
+        <menu ref="reports" inherit="top"/>
+    </body>
+</project>
