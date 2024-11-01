@@ -379,8 +379,13 @@
         <repository>
             <id>pavlab</id>
             <name>PavLab</name>
-            <url>scpexe://frink.msl.ubc.ca/space/maven2</url>
+            <url>scpexe://${pavlab.server}${pavlab.repoDir}</url>
         </repository>
+        <site>
+            <id>pavlab</id>
+            <name>PavLab</name>
+            <url>scpexe://${pavlab.server}${pavlab.siteDir}/${project.groupId}/${project.artifactId}-${project.version}</url>
+        </site>
     </distributionManagement>
 
     <profiles>
@@ -423,8 +428,13 @@
                 <repository>
                     <id>pavlab</id>
                     <name>PavLab</name>
-                    <url>file:///space/maven2</url>
+                    <url>file://${pavlab.repoDir}}</url>
                 </repository>
+                <site>
+                    <id>pavlab</id>
+                    <name>PavLab</name>
+                    <url>file://${pavlab.siteDir}/${project.groupId}/${project.artifactId}-${project.version}</url>
+                </site>
             </distributionManagement>
         </profile>
     </profiles>
@@ -435,6 +445,9 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
+        <pavlab.server>frink.pavlab.msl.ubc.ca</pavlab.server>
+        <pavlab.repoDir>/space/maven2</pavlab.repoDir>
+        <pavlab.siteDir>/space/web/maven-sites</pavlab.siteDir>
         <log4j.version>2.24.1</log4j.version>
         <slf4j.version>2.0.16</slf4j.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
