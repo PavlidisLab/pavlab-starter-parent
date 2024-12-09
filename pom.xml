@@ -413,7 +413,7 @@
                 <repository>
                     <id>pavlab</id>
                     <name>PavLab</name>
-                    <url>file://${pavlab.repoDir}}</url>
+                    <url>file://${pavlab.repoDir}</url>
                 </repository>
                 <site>
                     <id>pavlab</id>
