@@ -73,6 +73,7 @@
                                     <requireJavaVersion>
                                         <version>[8,)</version>
                                     </requireJavaVersion>
+                                    <dependencyConvergence/>
                                 </rules>
                             </configuration>
                         </execution>
