@@ -34,6 +34,7 @@ Here's the core dependencies that are managed by this POM:
     </parent>
 
     <!-- add your groupId, artifactId, etc. -->
+    <artifactId>foo</artifactId>
 
     <!-- Enforce minimal Maven version (optional) -->
     <build>
