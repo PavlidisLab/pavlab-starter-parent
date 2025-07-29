@@ -352,12 +352,6 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-inline</artifactId>
-                <version>${mockito.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
                 <version>3.27.3</version>
@@ -499,7 +493,7 @@
         <hibernate.version>4.2.21.Final</hibernate.version>
         <mysql.version>8.0.33</mysql.version>
         <tomcat.version>8.5.100</tomcat.version>
-        <mockito.version>4.11.0</mockito.version>
+        <mockito.version>5.17.0</mockito.version>
     </properties>
 
 </project>
