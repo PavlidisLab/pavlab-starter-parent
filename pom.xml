@@ -354,7 +354,7 @@
             <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
-                <version>3.27.3</version>
+                <version>3.27.4</version>
                 <scope>test</scope>
             </dependency>
 
@@ -488,7 +488,7 @@
         <pavlab.server>frink.pavlab.msl.ubc.ca</pavlab.server>
         <pavlab.repoDir>/space/maven2</pavlab.repoDir>
         <pavlab.siteDir>/space/web/maven-sites</pavlab.siteDir>
-        <log4j.version>2.24.3</log4j.version>
+        <log4j.version>2.25.1</log4j.version>
         <slf4j.version>1.7.36</slf4j.version>
         <hibernate.version>4.2.21.Final</hibernate.version>
         <dom4j.version>2.2.0</dom4j.version>
