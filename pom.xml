@@ -71,7 +71,7 @@
                                         <version>[3.6.3,)</version>
                                     </requireMavenVersion>
                                     <requireJavaVersion>
-                                        <version>[${java.version},)</version>
+                                        <version>[${java.jdk.version},)</version>
                                     </requireJavaVersion>
                                     <dependencyConvergence/>
                                 </rules>
@@ -501,6 +501,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
+        <java.jdk.version>${java.version}</java.jdk.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
