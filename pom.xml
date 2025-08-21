@@ -504,6 +504,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
+        <maven.compiler.proc>full</maven.compiler.proc>
         <pavlab.server>frink.pavlab.msl.ubc.ca</pavlab.server>
         <pavlab.repoDir>/space/maven2</pavlab.repoDir>
         <pavlab.siteDir>/space/web/maven-sites</pavlab.siteDir>
