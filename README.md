@@ -41,6 +41,7 @@ Here's the core dependencies that are managed by this POM:
     </parent>
 
     <!-- add your groupId, artifactId, etc. -->
+    <artifactId>foo</artifactId>
 
     <!-- Enforce minimal Maven version (optional) -->
     <build>
@@ -106,24 +107,33 @@ with the `local-deploy` Maven profile (activated via `-Plocal-deploy`).
 
 ## Hibernate
 
-To include Hibernate, ensure that you also include `javassist` and `dom4j`
-artifacts as we define up-to-date dependencies to support Java 9+ and address
+To include Hibernate, ensure that you also include `dom4j`, `javassist`, `jboss-logging`
+and `jboss-logging-annotations` artifacts as we define up-to-date dependencies to support Java 9+ and address
 security vulnerabilities.
 
 ```xml
-
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-core</artifactId>
-</dependency>
-<dependency>
-    <groupId>org.dom4j</groupId>
-    <artifactId>dom4j</artifactId>
-</dependency>
-<dependency>
-    <groupId>org.javassist</groupId>
-    <artifactId>javassist</artifactId>
-</dependency>
+<build>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.dom4j</groupId>
+        <artifactId>dom4j</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging-annotations</artifactId>
+    </dependency>
+</build>
 ```
 
 
