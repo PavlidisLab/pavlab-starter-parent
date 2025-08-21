@@ -187,6 +187,9 @@
                     <configuration>
                         <allowMajorUpdates>false</allowMajorUpdates>
                         <ignoredVersions>.*-a.*,.*-b.*,.*-M.*,.*-rc.*</ignoredVersions>
+                        <dependencyManagementExcludes>
+                            <dependencyManagementExclude>net.sf.ehcache:ehcache-core:*</dependencyManagementExclude>
+                        </dependencyManagementExcludes>
                     </configuration>
                 </plugin>
             </plugins>
