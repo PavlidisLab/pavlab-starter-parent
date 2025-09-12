@@ -605,9 +605,9 @@
             </properties>
         </profile>
         <profile>
-            <id>java23</id>
+            <id>java21</id>
             <activation>
-                <jdk>[23,)</jdk>
+                <jdk>[21,)</jdk>
             </activation>
             <properties>
                 <maven.compiler.proc>full</maven.compiler.proc>
