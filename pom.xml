@@ -359,7 +359,7 @@
             <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
-                <version>3.27.4</version>
+                <version>3.27.6</version>
                 <scope>test</scope>
             </dependency>
 
@@ -367,7 +367,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.40</version>
+                <version>${lombok.version}</version>
                 <scope>compile</scope>
             </dependency>
         </dependencies>
@@ -493,13 +493,14 @@
         <pavlab.server>frink.pavlab.msl.ubc.ca</pavlab.server>
         <pavlab.repoDir>/space/maven2</pavlab.repoDir>
         <pavlab.siteDir>/space/web/maven-sites</pavlab.siteDir>
-        <log4j.version>2.25.1</log4j.version>
+        <log4j.version>2.25.2</log4j.version>
         <slf4j.version>1.7.36</slf4j.version>
         <hibernate.version>4.2.21.Final</hibernate.version>
         <dom4j.version>2.2.0</dom4j.version>
         <mysql.version>8.0.33</mysql.version>
         <tomcat.version>8.5.100</tomcat.version>
-        <mockito.version>5.17.0</mockito.version>
+        <mockito.version>5.20.0</mockito.version>
+        <lombok.version>1.18.42</lombok.version>
     </properties>
 
 </project>
