@@ -6,7 +6,7 @@
     <parent>
         <groupId>ubc.pavlab</groupId>
         <artifactId>pavlab-starter-parent</artifactId>
-        <version>1.2.25</version>
+        <version>1.2.26</version>
         <relativePath>..</relativePath>
     </parent>
     <artifactId>pavlab-starter-parent-test</artifactId>
