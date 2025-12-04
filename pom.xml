@@ -499,7 +499,7 @@
         <dom4j.version>2.2.0</dom4j.version>
         <mysql.version>8.0.33</mysql.version>
         <tomcat.version>8.5.100</tomcat.version>
-        <mockito.version>5.20.0</mockito.version>
+        <mockito.version>4.11.0</mockito.version>
         <lombok.version>1.18.42</lombok.version>
     </properties>
 
